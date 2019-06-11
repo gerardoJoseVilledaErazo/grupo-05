@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="google" content="notranslate">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <!-- <link rel="stylesheet" href="../css/index.css"> -->
+        <link rel="stylesheet" href="../css/login.css">
+        <script src="../js/jquery.js"></script> <!-- la principal -->
+        <script src="jquery-3.4.1.js"></script>
+        <script src="../js/jquery.dataTables.min.js"></script> <!-- para hacer el buscador de peliculas -->
+        <script src="../js/jquery.scrollUp.js" ></script>
+        <title>INICAR SESIÓN - CINE XD</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, "Helvetica Neue", Helvetica,'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+        }
+        /* body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        } */
+        /* body *{
+            width: 100%;
+        } */
+        b{
+            margin-top: 20px;
+            text-align: center;
+        }
+        b{
+            height: 30px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        form *{
+            width: 300px;
+            text-align: center;
+            margin: 8px;
+        }
+        form input{
+            height: 30px;
+            border-radius: 5px;
+            border: 3px solid #e7e7e7;
+            font-size: 16px;
+        }
+        .lista ul{
+            text-align: center;
+        }
+        .lista ul li{
+            padding: 5px;
+        }
+        .agregar{
+            display: block;
+            padding: 5px;
+            background-color: darkred;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .agregar:hover{
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+        <header>
+            <div class="showcase">
+                <div class="tenue">
+                    <a href="index.html">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div class="fondo">
+            <div class="nav0 row">
+                <nav class=" nav1 row">
+                    <ul class="row contenedor">
+                        <li><a  href="../html/index.html"><i class="fa fa-home"></i><span> Inicio</span></a></li>
+                        <li><a  href="#"><i class="fas fa-phone"></i><span> +503 2451-6666</span></a></li>
+                        <li class="derecha-nav"><a  href="../html/login.html">  <i class="far fa-id-card" ></i>  <span> Registrarse</span></a></li>
+                        <li class="derecha-nav"><a  href="../html/iniciar_sesion.html"><i class="fas fa-sign-in-alt"></i><span> Iniciar sesión</span></a></li>
+                    </ul>
+                </nav>
+                <nav class=" nav2 row ">
+                    <ul class="row contenedor2 ">
+                        <li><a  href="../html/cartelera.html">   <i class="fas fa-film"></i><span> Ver Cartelera</span></a></li>
+                        <li><a  href="../Project/HTML/Index.html"> <!--i--><span> Promociones</span></a></li>
+                        <!-- <li><a  href="#"> <span> Salas</span></a></li> -->
+                        <li><a  href="../html/hoverEfect.html"> <!--i--><span> Conócenos</span></a></li> <li class="derecha-nav">    <a href="#"><i class="fab fa-facebook"></i>       </a>     <a href="#"><i class="fab fa-twitter-square"></i>       </a> <a href="#"><i class="fab fa-instagram"></i>   </a></li>                
+                        <!-- <li class="derecha-nav"><a href="#"><i class="fab fa-instagram"></i> <span></span>  </a></li>
+                        <li class="derecha-nav"><a href="#"><i class="fab fa-twitter-square"></i> <span></span>       </a></li>
+                        <li class="derecha-nav"><a href="#"><i class="fab fa-facebook"></i> <span></span>       </a></li> -->
+                    </ul>
+                </nav>
+            </div>
+            <div class="contenedor fondito row">
+                <main class="col-12 col-t-12">
+
+
+                    <h2>Iniciar Sesión</h2>
+                    <p id="mensaje"></p>
+                    <form action="">
+                        <input type="text" name="" id="usuario" placeholder="Usuario" autofocus>
+                        <input type="password" name="" id="password" placeholder="********">
+                        <!-- <a href="principal.html" class="agregar">Iniciar</a> -->
+                        <a href="../html/index.html" class="agregar">Iniciar</a>
+                    </form>    
+
+    
+                </main>            
+            </div>
+
+
+
+            <footer class="">
+                <div>
+                    <a href="#">    <i class="fab fa-facebook">     </i>        <span>Página de Facebook</span>     </a>
+                    <a href="#">    <i class="fab fa-twitter-square"></i>     <span>Página de Twitter</span></a>
+                    <a href="#">    <i class="fab fa-instagram">    </i>        <span>Página de Instagram</span>    </a>
+                    <hr><br>
+                    <span>Cine XD &copy; El Salvador, S.A. de C.V.</span>
+                </div>
+            </footer>
+        </div>
+
+
+    <script>
+        $(document).ready(function(){
+            $(".agregar").click(function(e){
+                var usuario = $("#usuario").val();
+                var password = $("#password").val();
+
+                sessionStorage.setItem("usuario", usuario);
+                sessionStorage.setItem("password", password);
+
+                if(password == "admin" && usuario == "Usuario"){  
+                    alert("Usuario y contraseña Correctos!");                  
+
+                }else if(usuario != "Usuario"){
+                    alert("Usuario o contraseña incorrectos.");
+                    e.preventDefault();
+
+                }else if(password != "admin"){
+                    alert("Contraseña incorrecta.");
+                    e.preventDefault();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

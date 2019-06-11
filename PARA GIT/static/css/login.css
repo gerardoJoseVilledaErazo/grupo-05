@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*-------------------------------------------------------------------------------------body*/
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica,'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    /* background-color: white; */
+}
+@font-face{
+    font-family: mifuente;
+    src: url(../fonts/horrendo.ttf);
+}
+@font-face{
+    font-family: mifuente2;
+    src: url(../fonts/CustomCraft-Regular.ttf);
+}
+
+/*-----------------------------------------------------------------------------------------------------*/
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"]{
+    width: 100%;
+    padding: 8px;
+    float: left;
+}
+/*-------------------------------------------------------------------------CONTENEDOR y FONDO*/
+.contenedor{
+    width: 90%;
+    margin: auto;
+    overflow: hidden; /*lo que se sale de los bordes va a desaparecer*/
+}
+.contenedor2{
+    width: 90%;
+    margin: auto;
+    overflow: hidden; /*lo que se sale de los bordes va a desaparecer*/
+}
+.contenedorF{
+    background-color: red;
+    width: 100%;
+    margin: auto;
+    overflow: hidden; /*lo que se sale de los bordes va a desaparecer*/
+}
+.fondo{
+    /* background-color: white; */
+    background: linear-gradient(90deg, #ba3267, #9a5022);
+}
+.fondito{
+    /* background-color: white; */
+    background: linear-gradient(90deg, #ba3267, #9a5022);
+}
+/*-----------------------------------------------------------------------------------------------------*/
+h2{
+    color:white;
+}
+h2, h3, p{
+    margin-top: 20px;
+    text-align: center;
+}
+p{
+    height: 30px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form *{
+    width: 300px;
+    text-align: center;
+    margin: 8px;
+}
+form input{
+    height: 30px;
+    border-radius: 5px;
+    border: 3px solid #e7e7e7;
+    font-size: 16px;
+}
+.lista ul{
+    text-align: center;
+}
+.lista ul li{
+    padding: 5px;
+}
+.agregar{
+    display: block;
+    padding: 5px;
+    background-color: darkred;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.agregar:hover{
+    opacity: 0.8;
+}
+/*-------------------------------------------------header , showcase y tenue*/
+header .tenue{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.616);
+}
+header .showcase{
+    background-image: url("../img/img1.jpg");/*esta es la imagen de la chica*/
+    background-size: cover;
+    background-position: center;
+}
+header .showcase img{
+    display: block;
+    margin: auto;  
+    width: auto;    
+    height: 100px;  
+}
+header .showcase a{
+    text-decoration: none;
+}
+header .showcase h1{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: mifuente; 
+}
+/*-----------------------------------------------------------------------------------------------------navBar*/
+nav ul{
+    list-style: none;
+}
+.nav1{
+    background-color: red;
+}
+.nav2{
+    background-color: red; 
+}
+.nav2 ul li a{
+    color: white;
+}
+.nav0{
+    /* position: sticky; */
+    top: 0;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    display: block;
+    padding: 8px;
+    font-weight: bold;
+}
+/* nav ul li a:hover{
+    text-decoration: underline;    
+    background-color: red;
+    text-decoration: none;
+    color: white;
+} */
+nav ul li a i{
+    font-size: 20px;
+}
+/*-------------------------------------------------------------------------------------------footer2*/
+.footer2{
+    background-color: rgb(231, 235, 238);
+    padding: 20px;
+}
+form{
+    width: 100%;
+}
+.footer2 p{
+    text-align: center;
+    color: white;
+}
+.footer2 a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+}
+/*-------------------------------------------------------------------------------------------footer*/
+footer{
+    display: grid;
+    text-align: center;
+    align-items: center;
+    background-color: red;
+    padding: 20px;
+}
+footer span{
+    color: white;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 600px){ /*------------------------------- TABLET */
+    .col-t-1{width: 8.33%;}
+    .col-t-2{width: 16.66%;}
+    .col-t-3{width: 25%;}
+    .col-t-4{width: 33.33%;}
+    .col-t-5{width: 41.66%;}
+    .col-t-6{width: 50%;}
+    .col-t-7{width: 58.33%;}
+    .col-t-8{width: 66.66%;}
+    .col-t-9{width: 75%;}
+    .col-t-10{width: 83.33%;}
+    .col-t-11{width: 91.66%;}
+    .col-t-12{width: 100%;}
+}
+@media only screen and (min-width: 768px){ /* ---------------------------ESCRITORIO */
+    .col-1{width: 8.33%;}
+    .col-2{width: 16.66%;}
+    .col-3{width: 25%;}
+    .col-4{width: 33.33%;}
+    .col-5{width: 41.66%;}
+    .col-6{width: 50%;}
+    .col-7{width: 58.33%;}
+    .col-8{width: 66.66%;}
+    .col-9{width: 75%;}
+    .col-10{width: 83.33%;}
+    .col-11{width: 91.66%;}
+    .col-12{width: 100%;}
+
+    .derecha-nav{
+        float: right;
+    }
+    nav ul li a{
+        float: left;/*tambien display: inline;*/
+    }
+    nav ul li a b{
+        display: none;
+    }
+    nav ul li a:hover b{
+        float: left;
+    }
+    
+    nav ul li a:hover{
+        text-decoration: underline;    
+        background-color: darkred;
+        text-decoration: none;
+        color: white;
+    }
+    /*
+    nav ul li a:hover i{
+        display: none;
+    }
+    */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body *{
+    width: 100%;
+} */
+
+/* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */

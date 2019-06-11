@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ES-es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" content="notranslate">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/estilos.css">    
+    <script src="../js/jquery.js"></script> <!-- la principal -->
+    <script src="jquery-3.4.1.js"></script>
+    <script src="../js/jquery.dataTables.min.js"></script> <!-- para hacer el buscador de peliculas -->
+    <script src="../js/jquery.scrollUp.js" ></script> <!-- este es el plugin que hemos descargado de: https://markgoodyear.com/2013/01/scrollup-jquery-plugin/ -->
+    
+    <title>CARTELERA - CINE XD </title>
+</head>
+<body>
+    <div class="Busqueda"><!--aqui empieza la clase Busqueda-->
+        <a href="">  <i class="fas fa-search"></i>  </a>
+        <input type="search" id="input-search"
+        placeholder="Busca una película...">            
+        <div class="content-search">
+            <div class="content-table">
+                <table id="table">
+                    <thead>
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                            <tr>
+                                <td>                            <a href="../html/aladdin.html">ALADDÍN</a></td>
+                            </tr>
+                            <tr>
+                                <td>                            <a href="../html/avengers.html">AVENGERS: ENDGAME</a></td>
+                            </tr>
+                            <tr>
+                                <td>                            <a href="../html/cirque.html">CIRQUE DU SOLEIL: KURIOUS</a></td>
+                            </tr>
+                            <tr>
+                                <td>                            <a href="../html/godzilla.html">GODZILLA II: EL REY DE LOS MONSTRUOS</a></td>
+                            </tr>
+                            <tr>
+                                <td>                            <a href="../html/jw3.html">JOHN WICK 3: PARABELLUM</a></td>
+                            </tr>
+                            <tr>
+                                <td>                            <a href="../html/mascotas2.html">LA VIDA SECRETA DE TUS MASCOTAS 2</a></td>
+                            </tr>
+                            <tr>
+                                <td>                            <a href="../html/rocketman.html">ROCKETMAN</a></td>
+                            </tr>
+                            <tr>
+                                <td>                            <a href="../html/xmen.html">X-MEN: DARK PHOENIX</a></td>
+                            </tr>
+                            <tr>
+                                <td>                            <a href="../html/elreyleon.html">EL REY LEÓN</a></td>
+                            </tr>
+                            <tr>
+                                <td>                            <a href="../html/it2.html">IT CHAPTER 2</a></td>
+                            </tr>
+                            <tr>
+                                <td>                            <a href="../html/mib.html">MEN IN BLACK INTERNATIONAL</a></td>
+                            </tr>
+                            <tr>
+                                <td>                            <a href="../html/spiderman.html">SPIDERMAN FAR FROM HOME</a></td>
+                            </tr>
+                            <tr>
+                                <td>                            <a href="../html/starwars.html">STAR WARS: EPISODIO IX</a></td>
+                            </tr>
+                            <tr>
+                                <td>                            <a href="../html/terminator.html">TERMINATOR: DARK FATE</a></td>
+                            </tr>
+                            <tr>
+                                <td>                            <a href="../html/toy story 4.html">TOY STORY 4</a></td>
+                            </tr>
+                            <tr>
+                                <td>                            <a href="../html/once.html">ONCE UPON A TIME IN HOLLYWOOD</a></td>
+                            </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>               
+
+    </div><!--aqui termina la clase Busqueda-->
+
+
+
+    <header>
+            <div class="showcase2">
+                <div class="tenue">
+                    <a href="../html/cartelera.html">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                        <h1 >XD</h1>
+                    </a>
+                </div>
+            </div>
+
+
+
+            <!-- <div class="slider-container">
+               <div class="slider">
+                   <a href="../html/hoverEfect.html"><div class="img" style="background-image: url('../img/img1.jpg');"></div></a>
+                   <div class="img" style="background-image: url('../img/img2.jpg');"></div>
+                   <div class="img" style="background-image: url('../img/img3.jpg');"></div>
+                   <div class="img" style="background-image: url('../img/css.png');"></div>
+               </div>
+           </div>  -->
+
+        <!-- <div class="showcase">
+            <div class="tenue">
+                <a href="index.html">
+                    <img src="../img/css.png" alt="">
+                    <h1>CINE XD</h1>
+                </a>
+            </div>
+        </div>
+    </header> -->
+
+    <div class="fondo">
+        <div class="nav0">
+            <nav class=" nav1 ">
+                <ul class="row contenedor">
+                    <li><a  href="../html/index.html"><i class="fa fa-home"></i><span> Inicio</span></a></li>
+                    <li><a  href="#"><i class="fas fa-phone"></i><span> +503 2451-6666</span></a></li>
+                    <li class="derecha-nav"><a  href="../html/login.html">  <i class="far fa-id-card" ></i>  <span> Registrarse</span></a></li>
+                    <li class="derecha-nav"><a  href="../html/iniciar_sesion.html"><i class="fas fa-sign-in-alt"></i><span> Iniciar sesión</span></a></li>
+                </ul>
+            </nav>
+            <nav class=" nav2 ">
+                <ul class="row contenedor2 ">
+                    <li><a  href="../html/cartelera.html"    >   <i class="fas fa-film"></i><span> Ver Cartelera</span></a></li>
+                    <li><a  href="../Project/HTML/Index.html"> <!--i--><span> Promociones</span></a></li>
+                    <!-- <li><a  href="#"> <span> Salas</span></a></li> -->
+                    <li><a  href="../html/hoverEfect.html"> <!--i--><span> Conócenos</span></a></li>        <li class="derecha-nav">    <a href="#"><i class="fab fa-facebook"></i>       </a>     <a href="#"><i class="fab fa-twitter-square"></i>       </a> <a href="#"><i class="fab fa-instagram"></i>   </a></li>
+                    <!-- <li class="derecha-nav"><a href="#"><i class="fab fa-instagram"></i> <span></span>  </a></li>
+                    <li class="derecha-nav"><a href="#"><i class="fab fa-twitter-square"></i> <span></span>       </a></li>
+                    <li class="derecha-nav"><a href="#"><i class="fab fa-facebook"></i> <span></span>       </a></li> -->
+                </ul>
+            </nav>
+        </div>
+
+
+
+        <!-- <div class="showcase2">
+            <div class="tenue">
+                <a href="../html/cartelera.html">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <h1>XD</h1>
+                </a>
+            </div>
+        </div> -->
+            <div class="slider-container">
+                    <div class="slider">
+                         <a href="../html/cirque.html"><div class="img" style="background-image: url('../img/img3.jpg');"></div></a>
+                         <a href="../html/cartelera.html"><div class="img" style="background-image: url('../img/css.png');"></div></a>
+                        <a href="../html/xmen.html"><div class="img" style="background-image: url('../img/img2.jpg');"></div></a>
+                        <a href="../html/index.html"><div class="img" style="background-image: url('../img/img1.jpg');"></div></a>
+                    </div>
+                </div> 
+
+
+
+        <div class="contenedor contenedor-cartelera fondito row">
+            <main class="col-m-12 col-n-12 col-t-12 row">
+
+
+
+                <div class="col-m-3 col-n-3 col-t-2 publicidad-izq"><!--columna izquierda-->
+                    <img style="height: 1010px"  src="../img/publicidad_de_aladdin.png" alt=""> <br> <br>
+                    <img style="height: 1010px" src="../img/publicidad_de_aladdin.png" alt="">
+                </div>
+
+
+
+                <div class="col-m-6 col-n-6 col-t-12"><!--columna central-->
+                    <div class="cartelera">                        
+                        <h2>Revisa los ultimos estrenos</h2>
+                    </div>
+
+                    <div class="article2">
+                        <div class="col-m-3 col-n-3 col-t-6">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <a href="../html/aladdin.html"><img  src="../img/en cartelera/aladdin-2019-banda-sonora.jpg" alt="">   </a>
+                        </div>
+                        <div class="col-m-9 col-n-9 col-t-6">
+                            <a href="../html/aladdin.html"><h3>ALADDÍN</h3></a>
+                            <br>
+                            <div class="row">
+                                <h6 class="col-m-2 col-n-2 col-t-2"></h6>
+                                <h6 class="col-m-2 col-n-2 col-t-2"></h6>
+                                <h4 >A</h4>
+                                <h4 >128 min</h4>                                
+                                <a  href="../html/aladdin.html" class="boton ">Ver Trailer</a>
+                            </div>
+                            <br><hr><br>
+                            <h5  style="color: blue">DOB</h5>
+                            <h5 >17:40</h5>
+                            <h5 >19:15</h5>
+                            <h5 >20:35</h5>
+                            <h5 >21:35</h5>
+                            <h5 >22:10</h5>
+                        </div>
+                    </div><!--termina la clase .article2-->                 
+                    <div class="article2">
+                            <div class="col-m-3 col-n-3 col-t-6">
+                                <img src="" alt="">
+                                <img src="" alt="">
+                                <a  href="../html/avengers.html"><img src="../img/en cartelera/avengers endgame.jpg" alt=""> </a>                                   
+                            </div>
+                            <div class="col-m-9 col-n-9 col-t-6">
+                                <a href="../html/avengers.html"><h3>AVENGERS: ENDGAME</h3></a>
+                                <br>
+                                <div class="row">
+                                    <h6 class="col-m-2 col-n-2 col-t-2"></h6>
+                                    <h6 class="col-m-2 col-n-2 col-t-2"></h6>    
+                                    <h4 >B</h4>
+                                    <h4 >182 min</h4>                                
+                                    <a  href="../html/avengers.html" class="boton ">Ver Trailer</a>
+                                </div>
+                                <br><hr><br>
+                                <h5  style="color: blue">DOB</h5>
+                                <h5 >20:00</h5>    
+                            </div>
+                    </div><!--termina la clase .article2-->
+                    <div class="article2">
+                        <div class="col-m-3 col-n-3 col-t-6">
+                                <img src="" alt="">
+                                <img src="" alt="">
+                                <a href="../html/cirque.html"><img src="../img/en cartelera/cirque.jpg" alt=""></a>
+                        </div>
+                        <div class="col-m-9 col-n-9 col-t-6">
+                            <a href="../html/cirque.html"><h3>CIRQUE DU SOLEIL: KURIOS</h3></a>
+                            <br>
+                            <div class="row">
+                                <h6 class="col-m-2 col-n-2 col-t-2"></h6>
+                                <h6 class="col-m-2 col-n-2 col-t-2"></h6>
+                                <h4 >B</h4>
+                                <h4 >105 min</h4>                                
+                                <a  href="../html/cirque.html" class="boton ">Ver Trailer</a>
+                            </div>
+                            <br><hr><br>
+                            <h5  style="color: blue">SUB 2D</h5>
+                            <h5 >CONCIERTO MUSICAL </h5>
+                            <h5 >20:00</h5>
+                        </div>
+                    </div><!--termina la clase .article2--> 
+                    <div class="article2">
+                        <div class="col-m-3 col-n-3 col-t-6">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <a href="../html/godzilla.html"><img src="../IMG/en cartelera/godzilla.jpg" alt=""> </a>  
+                        </div>
+                        <div class="col-m-9 col-n-9 col-t-6">
+                            <a href="../html/godzilla.html"><h3>GODZILLA II: EL REY DE LOS MONSTRUOS</h3></a>
+                            <br>
+                            <div class="row">
+                                <h6 class="col-m-2 col-n-2 col-t-2"></h6>
+                                <h6 class="col-m-2 col-n-2 col-t-2"></h6>
+                                <h4 >B</h4>
+                                <h4 >130 min</h4>                                
+                                <a  href="../html/godzilla.html" class="boton ">Ver Trailer</a>
+                            </div>
+                            <br><hr><br>
+                            <h5  style="color: blue">DOB</h5>
+                            <h6 > </h6>
+                            <h5 >22:30</h5>
+                        </div>
+                    </div><!--termina la clase .article2-->
+                    <div class="article2">
+                        <div class="col-m-3 col-n-3 col-t-6">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <a href="../html/jw3.html"><img src="../IMG/en cartelera/jonh wick 3.jpg" alt=""></a>
+                        </div>
+                        <div class="col-m-9 col-n-9 col-t-6">
+                            <a href="../html/jw3.html"><h3>JOHN WICK 3: PARABELLUM</h3></a>
+                            <br>
+                            <div class="row">
+                                <h6 class="col-m-2 col-n-2 col-t-2"></h6>
+                                <h6 class="col-m-2 col-n-2 col-t-2"></h6>
+                                <h4 >C</h4>
+                                <h4 >130 min</h4>                                
+                                <a  href="../html/jw3.html" class="boton ">Ver Trailer</a>
+                            </div>
+                            <br><hr><br>
+                            <h5  style="color: blue">DOB</h5>
+                            <h6 > </h6>
+                            <h5 >18:10</h5>
+                            <br><br>
+                            <h5  style="color: blue">3D DOB</h5>
+                            <h5 >20:55</h5>
+                            <h5 >22:15</h5>
+                        </div>
+                    </div><!--termina la clase .article2-->
+                    <div class="article2">
+                        <div class="col-m-3 col-n-3 col-t-6">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <a href="../html/mascotas2.html"><img src="../img/en cartelera/la vida secreta de tus mascotas 2.jpg" alt=""></a>
+                        </div>
+                        <div class="col-m-9 col-n-9 col-t-6">
+                            <a href="../html/mascotas2.html"><h3>LA VIDA SECRETA DE TUS MASCOTAS 2</h3></a>
+                            <br>
+                            <div class="row">
+                                <h6 class="col-m-2 col-n-2 col-t-2"></h6>
+                                <h6 class="col-m-2 col-n-2 col-t-2"></h6>
+                                <h4 >A</h4>
+                                <h4 >85 min</h4>                                
+                                <a  href="../html/mascotas2.html" class="boton ">Ver Trailer</a>
+                            </div>
+                            <br><hr><br>
+                            <h5  style="color: blue">DOB</h5>
+                            <h5 >17:25</h5>
+                            <h5 >18:30</h5>
+                            <h5 >19:35</h5>
+                            <h5 >20:40</h5>
+                        </div>
+                    </div><!--termina la clase .article2-->
+                    <div class="article2">
+                        <div class="col-m-3 col-n-3 col-t-6">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <a href="../html/rocketman.html"><img src="../img/en cartelera/rocketman.jpg" alt=""></a>
+                        </div>
+                        <div class="col-m-9 col-n-9 col-t-6">
+                            <a href="../html/rocketman.html"><h3>ROCKETMAN</h3></a>
+                            <br>
+                            <div class="row">
+                                <h6 class="col-m-2 col-n-2 col-t-2"></h6>
+                                <h6 class="col-m-2 col-n-2 col-t-2"></h6>
+                                <h4 >C</h4>
+                                <h4 >120 min</h4>                                
+                                <a  href="../html/rocketman.html" class="boton ">Ver Trailer</a>
+                            </div>
+                            <br><hr><br>
+                            <h5  style="color: blue">DOB</h5>
+                            <h5 >22:30</h5>
+                        </div>
+                    </div><!--termina la clase .article2-->
+                    <div class="article2">
+                        <div class="col-m-3 col-n-3 col-t-6">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <a href="../html/xmen.html"><img src="../img/en cartelera/dark phoenix.jpg" alt=""></a>
+                        </div>
+                        <div class="col-m-9 col-n-9 col-t-6">
+                            <a href="../html/xmen.html"><h3>X-MEN: DARK PHOENIX</h3></a>
+                            <br>
+                            <div class="row">
+                                <h6 class="col-m-2 col-n-2 col-t-2"></h6>
+                                <h6 class="col-m-2 col-n-2 col-t-2"></h6>
+                                <h4 >B</h4>
+                                <h4 >120 min</h4>                                
+                                <a  href="../html/xmen.html" class="boton ">Ver Trailer</a>
+                            </div>
+                            <br><hr><br>
+                            <h5  style="color: blue">DOB</h5>
+                            <h5 >16:45</h5>
+                            <h5 >19:30</h5>
+                            <h5 >21:40</h5>
+                            <br><br>
+                            <h5  style="color: blue">3D DOB</h5>
+                            <h5 >18:45</h5>
+                        </div>
+                    </div><!--termina la clase .article2-->  
+                </div><!--aqui termina columna central-->
+
+
+
+                <div class="col-m-3 col-n-3 col-t-12 publicidad-der"><!--columna derecha-->
+                    <img style="height: 1010px"  src="../img/publicidad_de_aladdin.png" alt=""> <br> <br>
+                    <img style="height: 1010px" src="../img/publicidad_de_aladdin.png" alt="">                    
+                </div>   
+            </main>            
+        </div>
+
+
+
+        <!-- <div class="footer2 col-12 col-t-12">  
+            <div class="col-3 col-t-3">
+            </div>          
+            <div class="aside2 col-6 col-t-6">
+                <h2>Catálogo de Películas</h2>
+                <form action="">
+                    <input class="col-12 col-t-12" type="text" name="buscar" id="buscar" placeholder="Busca una película...">
+                    <input type="submit" value="Buscar" name="" id="" class="boton">
+                </form>
+            </div>
+            <div class="col-3 col-t-3">
+            </div>
+        </div> -->
+        <footer class="contenedorF">       
+            <div>
+                <a href="#">    <i class="fab fa-facebook"></i>     <span>Página de Facebook</span>     </a>
+                <a href="#">    <i class="fab fa-twitter-square"></i>     <span>Página de Twitter</span></a>
+                <a href="#">    <i class="fab fa-instagram"></i>    <span>Página de Instagram</span>    </a>
+                <hr><br>
+                <p>Cine XD &copy; El Salvador, S.A. de C.V.</p>
+            </div>
+        </footer>
+
+    </div>  
+    
+    <script src="../js/miScroll.js" ></script>
+</body>
+</html>
